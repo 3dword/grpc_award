@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package pb;
+
+// The greeting service definition.
+service Award {
+  // Sends a greeting
+  rpc Draw (DrawRequest) returns (DrawReply) {}
+}
+
+// The request message containing the user's name.
+message DrawRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message DrawReply {
+  string message = 1;
+}
